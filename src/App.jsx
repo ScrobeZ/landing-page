@@ -8,9 +8,9 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div className='bg-gray-700 text-gray-900 scroll-smooth w-full'>
+    <div className='bg-black scroll-smooth w-full'>
       <Header />
-      <main className='w-3/5 flex-row items-center justify-self-center'>
+      <main className='w-full flex-column items-center justify-items-center'>
         <Hero />
         <About />
       </main>
