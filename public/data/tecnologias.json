@@ -1,0 +1,31 @@
+[
+    { 
+        "nombre": "Flutter", 
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" 
+    },
+    { 
+        "nombre": "React", 
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" 
+    },
+    { 
+        "nombre": "Spring Boot", 
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" 
+    },
+    { 
+        "nombre": ".NET Core", 
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg" 
+    },
+    { 
+        "nombre": "MySQL", 
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" 
+    },
+    { 
+        "nombre": "SQL Server", 
+        "logo": "https://img.icons8.com/color/48/000000/microsoft-sql-server.png" 
+        
+    },
+    { 
+        "nombre": "Git", 
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" 
+    }
+]

@@ -1,5 +1,38 @@
 @import "tailwindcss";
 
+@theme {
+  --duration-marquee: 10s;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - 24px)); }
+}
+
+@layer utilities {
+  .marquee-container {
+    @apply relative gap-6 overflow-hidden w-full;
+  }
+  .marquee-row {
+    @apply flex items-center gap-6 h-38 whitespace-nowrap;
+    animation: marquee var(--duration-marquee) linear infinite;
+  }
+  .fade-edge {
+    @apply pointer-events-none absolute top-0 h-full w-16 z-10;
+    background: linear-gradient(to right, var(--color-gray-900), transparent);
+  }
+
+  .fade-edge.right {
+    background: linear-gradient(to left, var(--color-gray-900), transparent);
+    right: 0;
+  }
+
+  .fade-edge.left {
+    left: 0;
+  }
+  
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -55,6 +88,13 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -70,3 +110,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
