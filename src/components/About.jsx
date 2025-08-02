@@ -3,7 +3,7 @@ import CarruselDeTecnologias from './CarruselDeTecnologias'
 
 export default function About() {
     return (
-        <section className="py-16 px-4 bg-gray-900 w-full">
+        <section id='about' className="py-16 px-4 bg-gray-900 w-full">
             <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl font-bold mb-6 text-white">Sobre mí</h2>
                 <p className="text-gray-200 text-lg">
