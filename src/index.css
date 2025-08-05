@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --duration-marquee: 10s;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -17,8 +21,18 @@
   .marquee-content {
     @apply flex gap-6;
     width: max-content;
-    animation: marquee 5s linear infinite;
+    animation: marquee var(--duration-marquee) linear infinite;
   }
+}
+
+.fade-edge {
+  @apply pointer-events-none absolute top-0 z-10 h-full w-16;
+  background: linear-gradient(to right, #101828, transparent);
+}
+
+.fade-edge.right {
+  right: 0;
+  background: linear-gradient(to left, #101828, transparent);
 }
 
 :root {

@@ -14,6 +14,7 @@ export default function CarruselDeTecnologias() {
 
   return (
     <div className="marquee-container">
+      <div className="fade-edge left" />
       <div className="marquee-content">
         {[...tecnologias, ...tecnologias].map((tec, i) => (
           <div
@@ -29,6 +30,7 @@ export default function CarruselDeTecnologias() {
           </div>
         ))}
       </div>
+      <div className="fade-edge right" />
     </div>
   );
 }
