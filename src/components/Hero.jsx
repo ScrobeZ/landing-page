@@ -1,19 +1,25 @@
-import React from 'react'
+import React from "react";
 
 export default function Hero() {
-    return (
-        <section id="hero" className="h-screen w-3/5 flex justify-between items-center text-center bg-black text-orange-600 px-4">
-            <div>
-                <h1 className="text-5xl font-bold mb-4">Hola, soy Jorge L. Nieto</h1>
-                <p className="text-xl text-gray-300 mb-6 w-150"> Ingeniero en Sistemas | Frontend con React & Flutter | Interés en Fullstack (Spring Boot / .NET Core).</p>
-            </div>
-            <div className="p-[3px] bg-gradient-to-r from-orange-500 to-yellow-400 rounded-xl">
-                <img
-                    src="/assets/foto-graduacion-cuadro.jpeg"
-                    alt="Jorge L. Nieto"
-                    className="w-100 h-100 oobject-cover rounded-lg"
-                />
-            </div>
-        </section>
-    )
+  return (
+    <section
+      id="hero"
+      className="flex h-screen w-3/5 items-center justify-between bg-black px-4 text-center text-orange-600"
+    >
+      <div>
+        <h1 className="mb-4 text-5xl font-bold">Hola, soy Jorge L. Nieto</h1>
+        <p className="mb-6 w-150 text-xl text-gray-300">
+          Ingeniero en Sistemas | Frontend con React & Flutter | Interés en
+          Fullstack (Spring Boot / .NET Core).
+        </p>
+      </div>
+      <div className="min-h-52 min-w-52 rounded-xl bg-gradient-to-r from-orange-500 to-yellow-400 p-[3px]">
+        <img
+          src="/assets/foto-graduacion-cuadro.jpeg"
+          alt="Jorge L. Nieto"
+          className="oobject-cover h-100 w-100 rounded-lg"
+        />
+      </div>
+    </section>
+  );
 }
