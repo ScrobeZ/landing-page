@@ -1,4 +1,6 @@
 import { useState } from "react";
+import GithubIcon from "/src/assets/github.svg?react";
+import LinkedInIcon from "/src/assets/linkedin.svg?react";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,6 +26,26 @@ export default function Header() {
           <li>
             <a href="#about" onClick={() => setMenuOpen(false)}>
               Sobre mí
+            </a>
+          </li>
+        </ul>
+        <ul className="flex min-w-20 justify-between">
+          <li>
+            <a
+              href="https://github.com/ScrobeZ"
+              target="_blank"
+              className="text-white transition hover:text-orange-500"
+            >
+              <GithubIcon className="h-9 w-9 fill-current" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/jorge-l-nieto-9929a4230"
+              target="_blank"
+              className="text-white transition hover:text-orange-500"
+            >
+              <LinkedInIcon className="h-9 w-9 fill-current" />
             </a>
           </li>
         </ul>

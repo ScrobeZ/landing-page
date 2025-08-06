@@ -6,8 +6,8 @@ export default function Hero() {
       id="hero"
       className="flex h-150 w-full flex-col items-center justify-center bg-black px-1 text-center text-orange-600 md:h-screen md:px-0 lg:w-4/5 lg:flex-row lg:justify-evenly"
     >
-      <div className="min-w-75 lg:pr-2 xl:px-0">
-        <h1 className="mb-4 text-2xl font-bold md:text-5xl">
+      <div className="animate-fade-up animate-delay-500 min-w-75 lg:pr-2 xl:px-0">
+        <h1 className="mb-4 bg-gradient-to-r from-orange-600 to-yellow-300 bg-clip-text text-2xl font-bold text-transparent md:min-h-14 md:text-5xl">
           Hola, soy Jorge L. Nieto.
         </h1>
         <p className="mb-6 max-w-150 text-gray-300 md:text-xl">
@@ -15,7 +15,8 @@ export default function Hero() {
           Fullstack (Spring Boot / .NET Core).
         </p>
       </div>
-      <div className="max-w-50 min-w-52 rounded-xl bg-gradient-to-r from-orange-500 to-yellow-400 p-[3px] md:max-w-1/3">
+
+      <div className="animate-fade-up animate-delay-500 max-w-50 min-w-52 rounded-xl bg-gradient-to-r from-orange-500 to-yellow-400 p-[3px] md:max-w-1/3">
         <img
           src="/assets/foto-graduacion-cuadro.jpeg"
           alt="Jorge L. Nieto"

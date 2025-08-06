@@ -15,11 +15,11 @@ export default function CarruselDeTecnologias() {
   return (
     <div className="marquee-container">
       <div className="fade-edge left" />
-      <div className="marquee-content">
+      <div className="marquee-content h-38 items-center">
         {[...tecnologias, ...tecnologias].map((tec, i) => (
           <div
             key={i}
-            className="h-36 w-36 flex-shrink-0 content-center rounded-xl bg-white/10 p-4 text-center shadow-md backdrop-blur-md transition hover:scale-105 hover:bg-white/20"
+            className="h-36 w-36 flex-shrink-0 content-center rounded-xl bg-white/10 p-4 text-center text-white shadow-md backdrop-blur-md transition hover:scale-105 hover:bg-white/20"
           >
             <img
               src={tec.logo}

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --duration-marquee: 10s;
+  --duration-marquee: 15s;
 }
 
 @keyframes marquee {
@@ -10,6 +10,17 @@
   }
   100% {
     transform: translateX(calc(-50% - 12px));
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -23,16 +34,24 @@
     width: max-content;
     animation: marquee var(--duration-marquee) linear infinite;
   }
+
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-delay-500 {
+    animation-delay: 0.5s;
+  }
 }
 
 .fade-edge {
   @apply pointer-events-none absolute top-0 z-10 h-full w-16;
-  background: linear-gradient(to right, #101828, transparent);
+  background: linear-gradient(to right, #1e2939, transparent);
 }
 
 .fade-edge.right {
   right: 0;
-  background: linear-gradient(to left, #101828, transparent);
+  background: linear-gradient(to left, #1e2939, transparent);
 }
 
 :root {
