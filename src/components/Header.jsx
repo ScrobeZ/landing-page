@@ -6,7 +6,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed z-50 w-full bg-black">
+    <header className="fixed z-50 w-full bg-gradient-to-b from-black from-75% to-transparent">
       <nav className="mx-auto flex max-w-6xl items-center justify-between p-4">
         <button
           className="text-3xl text-orange-600 md:hidden"
