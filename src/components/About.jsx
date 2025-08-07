@@ -27,7 +27,9 @@ export default function About() {
           como desarrollador frontend o fullstack.
         </p>
         <br />
-        <h3 className="mb-4 text-xl font-semibold">Tecnologías que utilizo</h3>
+        <h3 className="mb-4 text-xl font-semibold text-gray-200">
+          Tecnologías que utilizo
+        </h3>
         <CarruselDeTecnologias />
       </div>
     </section>
