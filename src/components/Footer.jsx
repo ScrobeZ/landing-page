@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-700 py-6 text-white">
+    <footer className="bg-zinc-900 py-6 text-white">
       <div className="mx-auto max-w-6xl text-center text-sm">
         <p>
           © {new Date().getFullYear()} Jorge Luis Nieto Robles. Todos los

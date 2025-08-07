@@ -8,7 +8,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className={`animate-delay-600 w-full bg-gradient-to-b from-black from-0% to-gray-800 to-10% px-4 py-16 transition-opacity duration-600 ease-out md:to-15% ${
+      className={`animate-delay-600 w-full rounded-t-3xl bg-neutral-900 p-8 px-4 py-16 shadow-inner shadow-black/30 transition-opacity duration-600 ease-out ${
         inView ? "animate-fade-up" : "translate-y-8 opacity-0"
       }`}
     >

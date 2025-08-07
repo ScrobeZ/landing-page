@@ -50,12 +50,12 @@
 
 .fade-edge {
   @apply pointer-events-none absolute top-0 z-10 h-full w-16;
-  background: linear-gradient(to right, #1e2939, transparent);
+  background: linear-gradient(to right, #171717, transparent);
 }
 
 .fade-edge.right {
   right: 0;
-  background: linear-gradient(to left, #1e2939, transparent);
+  background: linear-gradient(to left, #171717, transparent);
 }
 
 :root {
